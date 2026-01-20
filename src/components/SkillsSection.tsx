@@ -1,21 +1,27 @@
 const skills = {
-  "Frontend": [
-    { name: "React", level: 95 },
-    { name: "TypeScript", level: 90 },
-    { name: "Tailwind CSS", level: 92 },
-    { name: "Next.js", level: 85 },
+  "Programming": [
+    { name: "Python", level: 90 },
+    { name: "Java", level: 80 },
+    { name: "C/C++", level: 75 },
+    { name: "JavaScript", level: 80 },
   ],
-  "Backend": [
-    { name: "Node.js", level: 88 },
-    { name: "Python", level: 82 },
-    { name: "PostgreSQL", level: 85 },
-    { name: "GraphQL", level: 78 },
+  "AI & Data": [
+    { name: "TensorFlow/Keras", level: 85 },
+    { name: "NumPy/Pandas", level: 88 },
+    { name: "SQL/Oracle", level: 82 },
+    { name: "Hadoop", level: 70 },
   ],
-  "Tools & Others": [
-    { name: "Git", level: 90 },
-    { name: "Docker", level: 80 },
-    { name: "AWS", level: 75 },
-    { name: "CI/CD", level: 82 },
+  "Networking & Security": [
+    { name: "TCP/IP, DNS, VLANs", level: 85 },
+    { name: "Kali Linux/Metasploit", level: 80 },
+    { name: "Cisco Packet Tracer", level: 85 },
+    { name: "Burp Suite/Nmap", level: 78 },
+  ],
+  "Tools & Platforms": [
+    { name: "Linux/Windows", level: 90 },
+    { name: "VS Code/VMware", level: 88 },
+    { name: "Arduino/IoT", level: 80 },
+    { name: "HTML/CSS/Tailwind", level: 85 },
   ],
 };
 
@@ -27,7 +33,7 @@ const SkillsSection = () => {
           My <span className="gradient-text">Skills</span>
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {Object.entries(skills).map(([category, categorySkills], categoryIndex) => (
             <div 
               key={category}

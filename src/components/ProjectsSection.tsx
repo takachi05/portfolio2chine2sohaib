@@ -3,31 +3,17 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include real-time inventory, payment processing, and admin dashboard.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "#",
+    title: "USB Activity Monitoring & Alerting System",
+    description: "Designed and developed a system to monitor USB device activity in real time, detect unauthorized connections, and generate automated alerts. Logs all USB events for traceability and improved security in sensitive environments.",
+    tech: ["Python", "System APIs", "Logging", "Event Detection"],
+    github: "https://github.com/takachi05",
     live: "#",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.",
-    tech: ["TypeScript", "Next.js", "Prisma", "WebSocket"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "AI Chat Assistant",
-    description: "An intelligent chatbot powered by OpenAI's GPT, featuring context awareness, conversation history, and custom training capabilities.",
-    tech: ["Python", "FastAPI", "OpenAI", "Redis"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations and dark mode support.",
-    tech: ["React", "Tailwind", "Framer Motion"],
-    github: "#",
+    title: "Log-Based Alerting & Monitoring Platform",
+    description: "Built a log monitoring system that analyzes system and application logs to detect anomalies, errors, and suspicious behavior. Triggers alerts based on predefined rules for quick incident response.",
+    tech: ["Python", "Log Parsing", "Linux", "Automation"],
+    github: "https://github.com/takachi05",
     live: "#",
   },
 ];

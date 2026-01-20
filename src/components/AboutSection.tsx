@@ -1,4 +1,4 @@
-import { User, Code, Coffee } from "lucide-react";
+import { User, Code, GraduationCap } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -11,31 +11,34 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 opacity-0 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Full Stack Developer with 5+ years of experience 
-              building modern web applications. I specialize in React, TypeScript, 
-              and Node.js, creating solutions that are both beautiful and functional.
+              I'm a passionate Computer Engineer driven by the challenge of designing 
+              intelligent systems that operate in real-world and resource-constrained 
+              environments. My interests span machine learning, system optimization, 
+              and data-driven engineering, where I focus on turning complex ideas into 
+              practical, efficient solutions.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, 
-              contributing to open-source projects, or enjoying a good cup of coffee 
-              while reading about the latest industry trends.
+              When I'm not building or experimenting, you'll find me exploring emerging 
+              technologies, refining research ideas, and continuously learning—often in 
+              challenging environments—driven by curiosity, resilience, and the desire 
+              to create systems that truly make an impact.
             </p>
             
             <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <Code className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold">50+</p>
+                <p className="text-2xl font-bold">3</p>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
-                <User className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold">5+</p>
-                <p className="text-sm text-muted-foreground">Years Exp.</p>
+                <GraduationCap className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <p className="text-2xl font-bold">Fresh</p>
+                <p className="text-sm text-muted-foreground">Graduate</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
-                <Coffee className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <User className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <p className="text-2xl font-bold">∞</p>
-                <p className="text-sm text-muted-foreground">Coffee</p>
+                <p className="text-sm text-muted-foreground">Curiosity</p>
               </div>
             </div>
           </div>
