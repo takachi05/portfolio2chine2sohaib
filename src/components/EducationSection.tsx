@@ -2,22 +2,22 @@ import { GraduationCap, Calendar } from "lucide-react";
 
 const education = [
   {
-    degree: "Master of Computer Science",
-    institution: "Stanford University",
-    year: "2018 - 2020",
-    description: "Specialized in Software Engineering and Distributed Systems. Graduated with honors.",
+    degree: "Diplôme d'Ingénieur & Master's in Telecommunications",
+    institution: "ENSREESD - École Nationale Supérieure des Énergies Renouvelables",
+    year: "2022 - 2025",
+    description: "Specializing in Industrial Networks & AI. Covering AI, big data (Hadoop), smart grids, embedded networks, cloud computing, IoT, digital communications, and signal processing.",
   },
   {
-    degree: "Bachelor of Computer Science",
-    institution: "MIT",
-    year: "2014 - 2018",
-    description: "Focus on Algorithms and Data Structures. Dean's List all semesters.",
+    degree: "Preparatory Classes in Science and Technology",
+    institution: "ENSREESD",
+    year: "2020 - 2022",
+    description: "Built strong foundations in advanced mathematics, physics, computer science, engineering sciences, and industrial design (AutoCAD). Passed national competitive examination.",
   },
   {
-    degree: "High School Diploma",
-    institution: "Tech High School",
-    year: "2010 - 2014",
-    description: "Advanced placement in Mathematics and Computer Science.",
+    degree: "Baccalaureate in Experimental Sciences",
+    institution: "Lycée Maajouj El-Amri, Barika",
+    year: "2020",
+    description: "Successfully completed high school with focus on experimental sciences.",
   },
 ];
 

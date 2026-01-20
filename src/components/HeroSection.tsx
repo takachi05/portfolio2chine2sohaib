@@ -17,16 +17,16 @@ const HeroSection = () => {
           </p>
           
           <h1 className="text-5xl md:text-7xl font-bold opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <span className="gradient-text">John Doe</span>
+            <span className="gradient-text">Chine Sohaib</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-muted-foreground font-light opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Full Stack Developer
+            Computer Engineer
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Passionate about crafting beautiful, performant web applications 
-            that solve real-world problems.
+            Designing intelligent systems for real-world, resource-constrained environments. 
+            Focused on machine learning, system optimization, and data-driven engineering.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>

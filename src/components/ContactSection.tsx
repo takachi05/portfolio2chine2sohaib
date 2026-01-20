@@ -21,7 +21,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
               
               <a 
-                href="mailto:john@example.com"
+                href="mailto:sohaib.chine111@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-lg bg-background hover:bg-secondary/50 transition-colors group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -29,12 +29,12 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">john@example.com</p>
+                  <p className="font-medium">sohaib.chine111@gmail.com</p>
                 </div>
               </a>
               
               <a 
-                href="tel:+1234567890"
+                href="tel:+213656019716"
                 className="flex items-center gap-4 p-4 rounded-lg bg-background hover:bg-secondary/50 transition-colors group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -42,7 +42,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-medium">+1 (234) 567-890</p>
+                  <p className="font-medium">+213 656 019 716</p>
                 </div>
               </a>
               
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">San Francisco, CA</p>
+                  <p className="font-medium">Barika, Algeria</p>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ const ContactSection = () => {
                 <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
                 <div className="flex gap-4">
                   <a 
-                    href="https://linkedin.com/in/johndoe"
+                    href="https://www.linkedin.com/in/sohaib-chine"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
@@ -69,7 +69,7 @@ const ContactSection = () => {
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a 
-                    href="https://github.com/johndoe"
+                    href="https://github.com/takachi05"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
