@@ -1,15 +1,15 @@
 import { User, Code, GraduationCap } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="bg-card">
+  return <section id="about" className="bg-card">
       <div className="section-container">
-        <h2 className="section-title">
+        <h2 className="section-title text-muted-foreground">
           <span className="gradient-text">About</span> Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 opacity-0 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-6 opacity-0 animate-slide-in-left" style={{
+          animationDelay: '0.2s'
+        }}>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate Computer Engineer driven by the challenge of designing 
               intelligent systems that operate in real-world and resource-constrained 
@@ -27,23 +27,25 @@ const AboutSection = () => {
             <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <Code className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold">3</p>
+                <p className="text-2xl font-bold text-muted-foreground">3</p>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <GraduationCap className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold">Fresh</p>
+                <p className="text-2xl font-bold text-muted-foreground">Fresh</p>
                 <p className="text-sm text-muted-foreground">Graduate</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <User className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold">∞</p>
+                <p className="text-2xl font-bold text-muted-foreground">∞</p>
                 <p className="text-sm text-muted-foreground">Curiosity</p>
               </div>
             </div>
           </div>
           
-          <div className="relative opacity-0 animate-slide-in-right" style={{ animationDelay: '0.3s' }}>
+          <div className="relative opacity-0 animate-slide-in-right" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 p-8 flex items-center justify-center">
               <div className="w-full h-full rounded-xl bg-muted/50 flex items-center justify-center">
                 <User className="w-32 h-32 text-primary/30" />
@@ -53,8 +55,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
