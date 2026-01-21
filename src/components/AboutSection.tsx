@@ -27,17 +27,17 @@ const AboutSection = () => {
             <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <Code className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold text-muted-foreground">3</p>
+                <p className="text-2xl font-bold text-secondary-foreground">3</p>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <GraduationCap className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold text-muted-foreground">Fresh</p>
+                <p className="text-2xl font-bold text-secondary-foreground">Fresh</p>
                 <p className="text-sm text-muted-foreground">Graduate</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-secondary/50">
                 <User className="w-8 h-8 mx-auto mb-2 text-primary" />
-                <p className="text-2xl font-bold text-muted-foreground">∞</p>
+                <p className="text-2xl font-bold text-secondary-foreground">∞</p>
                 <p className="text-sm text-muted-foreground">Curiosity</p>
               </div>
             </div>
