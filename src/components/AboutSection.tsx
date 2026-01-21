@@ -1,4 +1,5 @@
 import { User, Code, GraduationCap } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 const AboutSection = () => {
   return <section id="about" className="bg-card">
       <div className="section-container">
@@ -46,10 +47,12 @@ const AboutSection = () => {
           <div className="relative opacity-0 animate-slide-in-right" style={{
           animationDelay: '0.3s'
         }}>
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 p-8 flex items-center justify-center">
-              <div className="w-full h-full rounded-xl bg-muted/50 flex items-center justify-center">
-                <User className="w-32 h-32 text-primary/30" />
-              </div>
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 p-2 flex items-center justify-center overflow-hidden">
+              <img 
+                src={profileImage} 
+                alt="Chine Sohaib" 
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
           </div>
