@@ -5,7 +5,7 @@ const AboutSection = () => {
     <section id="about" className="bg-card">
       <div className="section-container">
         <h2 className="section-title">
-          About <span className="gradient-text">Me</span>
+          <span className="gradient-text">About</span> Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
