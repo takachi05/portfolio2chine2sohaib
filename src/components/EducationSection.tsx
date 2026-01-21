@@ -1,19 +1,19 @@
 import { GraduationCap, Calendar } from "lucide-react";
 const education = [{
-  degree: "Diplôme d'Ingénieur & Master's in Telecommunications",
-  institution: "ENSREESD - École Nationale Supérieure des Énergies Renouvelables",
+  degree: "Engineering degree in Industrial Networks and Artificial Intelligence & Master's degree in Telecommunications",
+  institution: "HNSRE2SD (Higher National School of Renewable Energies, Environment and Sustainable Development)",
   year: "2022 - 2025",
   description: "Specializing in Industrial Networks & AI. Covering AI, big data (Hadoop), smart grids, embedded networks, cloud computing, IoT, digital communications, and signal processing."
 }, {
   degree: "Preparatory Classes in Science and Technology",
-  institution: "ENSREESD",
+  institution: "HNSRE2SD (Higher National School of Renewable Energies, Environment and Sustainable Development)",
   year: "2020 - 2022",
   description: "Built strong foundations in advanced mathematics, physics, computer science, engineering sciences, and industrial design (AutoCAD). Passed national competitive examination."
 }, {
   degree: "Baccalaureate in Experimental Sciences",
   institution: "Lycée Maajouj El-Amri, Barika",
   year: "2020",
-  description: "Successfully completed high school with focus on experimental sciences."
+  description: ""
 }];
 const EducationSection = () => {
   return <section id="education" className="bg-background">
