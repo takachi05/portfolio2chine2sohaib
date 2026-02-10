@@ -8,6 +8,7 @@ import samsung4 from "@/assets/internships/samsung-4.jpg";
 import samsung5 from "@/assets/internships/samsung-5.jpg";
 import samsung6 from "@/assets/internships/samsung-6.jpg";
 import samsung7 from "@/assets/internships/samsung-7.jpg";
+import schneider1 from "@/assets/internships/schneider-1.jpg";
 
 interface Internship {
   id: number;
@@ -32,6 +33,17 @@ During this internship, I contributed to the Control & Command operations and qu
 
 I worked closely with Electrical & Instrumentation (E&I), Mechanical Engineering, and Control & Command teams to ensure compliance with technical standards, safety requirements, and project specifications.`,
     images: [samsung1, samsung2, samsung3, samsung4, samsung5, samsung6, samsung7],
+  },
+  {
+    id: 2,
+    title: "Electrical Safety Training & Certification (NF C18-510)",
+    company: "SCHNEIDER ELECTRIC",
+    location: "Algiers, Algeria",
+    year: "2024",
+    description: `I completed an electrical safety training and certification program (Habilitation électrique HTA ET BT - AS+BS) at the Schneider Training Institute of Algeria (ISFA), in compliance with the NF C18-510 standard.
+
+The program covered risk identification for low voltage (BT) and high voltage (HTA) electrical installations, safety regulations, lockout/tagout procedures, and intervention protocols. The training included both theoretical and practical assessments, culminating in a QCM-based evaluation to validate competency in working safely on and around electrical installations.`,
+    images: [schneider1],
   },
 ];
 
