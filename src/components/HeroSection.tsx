@@ -36,7 +36,7 @@ const HeroSection = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="group" asChild>
-              <a href="/cv.pdf" download>
+              <a href="/portfolio2chine2sohaib/cv.pdf" download>
                 <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
                 Download CV
               </a>
