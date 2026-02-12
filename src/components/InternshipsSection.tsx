@@ -5,7 +5,6 @@ import samsung1 from "@/assets/internships/samsung-1.jpg";
 import samsung2 from "@/assets/internships/samsung-2.jpg";
 import samsung3 from "@/assets/internships/samsung-3.jpg";
 import samsung4 from "@/assets/internships/samsung-4.jpg";
-import samsung5 from "@/assets/internships/samsung-5.jpg";
 import samsung6 from "@/assets/internships/samsung-6.jpg";
 import samsung7 from "@/assets/internships/samsung-7.jpg";
 import schneider1 from "@/assets/internships/schneider-1.jpg";
@@ -32,7 +31,7 @@ const internships: Internship[] = [
 During this internship, I contributed to the Control & Command operations and quality validation of critical power plant systems. My responsibilities included participating in testing and inspection activities for electrical cabinets and supervising automated control systems used to monitor and operate gas and steam turbines, steam generators, transformers, cooling systems, and other core plant equipment through industrial control systems and human–machine interfaces (HMI).
 
 I worked closely with Electrical & Instrumentation (E&I), Mechanical Engineering, and Control & Command teams to ensure compliance with technical standards, safety requirements, and project specifications.`,
-    images: [samsung1, samsung2, samsung3, samsung4, samsung5, samsung6, samsung7],
+    images: [samsung1, samsung2, samsung3, samsung4, samsung6, samsung7],
   },
   {
     id: 2,

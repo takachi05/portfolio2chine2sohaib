@@ -1,6 +1,12 @@
 import { ExternalLink, Github, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const projects = [{
+  title: "Portfolio Webpage",
+  description: "Designed and developed a modern, responsive personal portfolio website to showcase my skills, education, internships, and projects. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations and a clean dark theme.",
+  tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+  github: "https://github.com/takachi05",
+  live: "https://portfolio2chine2sohaib.lovable.app"
+}, {
   title: "USB Activity Monitoring & Alerting System",
   description: "Designed and developed a system to monitor USB device activity in real time, detect unauthorized connections, and generate automated alerts. Logs all USB events for traceability and improved security in sensitive environments.",
   tech: ["Python", "System APIs", "Logging", "Event Detection"],
