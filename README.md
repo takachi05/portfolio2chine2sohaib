@@ -1,14 +1,14 @@
-#🚀 Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
 Welcome to my personal portfolio project.
 This website showcases my projects, skills, experience, and background as a developer.
 
-##🌐 Live Demo
+## 🌐 Live Demo
 
 👉 https://takachi05.github.io/portfolio2chine2sohaib/
 
 
-##📌 About This Project
+## 📌 About This Project
 
 This portfolio was built to present:
 
@@ -36,7 +36,7 @@ This project is built with:
 
 🧩 shadcn-ui
 
-🧑‍💻 Getting Started (Run Locally)
+## 🧑‍💻 Getting Started (Run Locally)
 
 To run this project locally:
 
