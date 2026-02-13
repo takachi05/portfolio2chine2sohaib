@@ -1,6 +1,30 @@
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
 const ContactSection = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (formData.name && formData.email && formData.message) {
+      // Open email client with pre-filled subject and body
+      const subject = "Portfolio Contact Form";
+      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+      window.location.href = `mailto:sohaib.chine111@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Reset form and show confirmation
+      setFormData({ name: "", email: "", message: "" });
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000);
+    }
+  };
   return <section id="contact" className="bg-card">
       <div className="section-container">
         <h2 className="section-title text-muted-foreground">
@@ -70,19 +94,20 @@ const ContactSection = () => {
           }}>
               <h3 className="text-xl font-semibold mb-6 text-muted-foreground">Send a Message</h3>
               
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-muted-foreground">Name</label>
-                  <input type="text" id="name" className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors" placeholder="Your name" />
+                  <input type="text" id="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors" placeholder="Your name" required />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2 text-muted-foreground">Email</label>
-                  <input type="email" id="email" className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors" placeholder="your@email.com" />
+                  <input type="email" id="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors" placeholder="your@email.com" required />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2 text-muted-foreground">Message</label>
-                  <textarea id="message" rows={4} className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors resize-none" placeholder="Your message..." />
+                  <textarea id="message" value={formData.message} onChange={handleChange} rows={4} className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors resize-none" placeholder="Your message..." required />
                 </div>
+                {submitted && <p className="text-sm text-primary">Message sent! Opening your email client...</p>}
                 <Button type="submit" className="w-full glow-effect">
                   <Send className="w-4 h-4 mr-2" />
                   Send Message
