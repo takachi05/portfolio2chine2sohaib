@@ -31,7 +31,14 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <Button size="lg" className="group glow-effect" asChild>
-              <a href="#contact">
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById("contact");
+                  el?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Get In Touch
               </a>
             </Button>
