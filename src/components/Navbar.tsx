@@ -36,7 +36,12 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map(link => <a key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            {navLinks.map(link => <a key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" onClick={(e) => {
+                e.preventDefault();
+                const id = link.href.replace('#', '');
+                const el = document.getElementById(id);
+                el?.scrollIntoView({ behavior: 'smooth' });
+              }}>
                 {link.name}
               </a>)}
           </div>
@@ -50,7 +55,13 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              {navLinks.map(link => <a key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-2 py-2" onClick={() => setIsMobileMenuOpen(false)}>
+              {navLinks.map(link => <a key={link.name} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-2 py-2" onClick={(e) => {
+                  e.preventDefault();
+                  setIsMobileMenuOpen(false);
+                  const id = link.href.replace('#', '');
+                  const el = document.getElementById(id);
+                  el?.scrollIntoView({ behavior: 'smooth' });
+                }}>
                   {link.name}
                 </a>)}
             </div>
